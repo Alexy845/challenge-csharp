@@ -28,7 +28,7 @@ namespace CSharpDiscovery.Quest03
         }
         
         public override string ToString(){
-            return Name + "(Lat=" + Latitude + ", Long=" + Longitude + ")";
+            return Name + " (Lat=" + Latitude + ", Long=" + Longitude + ")";
         }
   
     }
