@@ -7,8 +7,8 @@ namespace CSharpDiscovery.Quest02
     {
         public static DateTime FromStringToDateTime(string dateStr)
         {
-            CultureInfo provider = CultureInfo.GetCultureInfo("fr-FR");
-            return DateTime.ParseExact(dateStr, "dd/MM/yyyy HH:mm:", provider);
+            CultureInfo provider = new CultureInfo("fr-FR");
+            return DateTime.ParseExact(dateStr, "dd/MM/yyyy HH:mm", provider);
         }
     }
 }
