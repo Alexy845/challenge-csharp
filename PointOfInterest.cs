@@ -14,13 +14,13 @@ namespace CSharpDiscovery.Quest03
             Longitude = -0.5663056;
             Name = "Bordeaux Ynov Campus";
         }
-        public PointOfInterest(double latitude, double longitude, string name)
+        public PointOfInterest(string name, double latitude, double longitude)
         {
             Latitude = latitude;
             Longitude = longitude;
             Name = name;
         }
  
-        public static string GoogleMapsUrlTemplate { get { return "https://www.google.com/maps/place/{0}/@{1},{2},15z/"; } }
+        public static string GoogleMapsUrlTemplate { get ; } = "https://www.google.com/maps/place/{0}/@{1},{2},15z/";  
     }
 }
