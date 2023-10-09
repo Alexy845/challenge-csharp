@@ -6,7 +6,7 @@ namespace CSharpDiscovery.Quest02
     {
         public static DateTime TodayAtMidnight()
         {
-            return DateTime.Today; && DateTime.Now ;
+            return DateTime.Today;
         }
     }
 }
