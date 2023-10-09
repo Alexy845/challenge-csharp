@@ -20,7 +20,11 @@ namespace CSharpDiscovery.Quest03
             Longitude = longitude;
             Name = name;
         }
- 
+
+        public string GetGoogleMapsUrl(){
+            string url = string.Format(GoogleMapsUrlTemplate, Name, Latitude, Longitude);
+            return url;
+        }
         public static string GoogleMapsUrlTemplate { get ; } = "https://www.google.com/maps/place/{0}/@{1},{2},15z/";  
     }
 }
