@@ -22,7 +22,7 @@ namespace CSharpDiscovery.Quest03
         }
 
         public string GetGoogleMapsUrl(){
-            string url = string.Format(GoogleMapsUrlTemplate, Name, Latitude, Longitude);
+            string url = string.Format(GoogleMapsUrlTemplate, Name.Replace(" ", "+"), Latitude, Longitude);
             return url;
         }
         public static string GoogleMapsUrlTemplate { get ; } = "https://www.google.com/maps/place/{0}/@{1},{2},15z/";  
