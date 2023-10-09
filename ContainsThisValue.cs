@@ -6,6 +6,10 @@ namespace CSharpDiscovery.Quest02
         {
             foreach (int i in tab)
             {
+                if(tab == null)
+                {
+                    return false;
+                }
                 if (i == value)
                 {
                     return true;
