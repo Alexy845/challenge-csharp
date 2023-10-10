@@ -11,7 +11,7 @@ namespace CSharpDiscovery.Quest02
             {
                 string giver = people.ElementAt(random.Next(people.Count));
                 string receiver = people.ElementAt(random.Next(people.Count));
-                if(giver != receiver && !result.ContainsKey(giver))
+                if(giver != receiver && !result.ContainsKey(giver)) 
                 {
                     result.Add(giver,receiver);
                     end++;
@@ -21,3 +21,4 @@ namespace CSharpDiscovery.Quest02
         }
     }
 }
+
