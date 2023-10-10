@@ -4,13 +4,13 @@ namespace CSharpDiscovery.Quest04
     {
         public HybridCar() : base()
         {
-            FuelLevel = 0;
-            BatteryLevel = 0;
-            
+
         }
         public HybridCar(string model, string brand, string color, int currentSpeed = 0) : base(model, brand, color, currentSpeed)
         {
             currentSpeed = 0;
+            FuelLevel = 100;
+            BatteryLevel = 100;
         }
         public int FuelLevel { get; set; }
         public int BatteryLevel { get; set; }
